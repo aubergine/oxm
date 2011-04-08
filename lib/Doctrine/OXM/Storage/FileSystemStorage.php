@@ -29,27 +29,27 @@ class FileSystemStorage implements Storage
     /**
      * @var string
      */
-    private $storagePath;
+    protected $storagePath;
 
     /**
      * @var
      */
-    private $fileExtension;
+    protected $fileExtension;
 
     /**
      *
      */
-    private $fileModeBits = 0755;
+    protected $fileModeBits = 0755;
 
     /**
      * @var boolean
      */
-    private $useNamespaceInPath = true;
+    protected $useNamespaceInPath = true;
 
     /**
      * @var array
      */
-    private $fileLocks = array();
+    protected $fileLocks = array();
 
 
     /**
